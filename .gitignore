@@ -12,6 +12,9 @@
 *.so
 *.dylib
 *.dll
+*.ilk
+*.pdb
+*.ipch
 
 # Fortran module files
 *.mod
