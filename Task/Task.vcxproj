@@ -89,7 +89,10 @@
     <ClInclude Include="TService.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CTaskData.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="ReachCountTaskConfiger.cpp" />
+    <ClCompile Include="ReachCountTaskData.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

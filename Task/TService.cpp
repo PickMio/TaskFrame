@@ -2,23 +2,28 @@
 
 #include "TService.h"
 
-CTask* TService::addTask()
+bool TService::addTask(int32_t id)
 {
 
-    return nullptr;
+    return false;
 }
 
-void TService::updateProgress(CTask* task)
+void TService::updateProgress(int32_t tid, int32_t count)
+{
+    auto tpair = processingTasks.find(tid);
+    if (tpair == processingTasks.end()){
+        //没找到当前的任务!!! 严重错误
+        return;
+    }
+}
+
+void TService::finishTask(int32_t tid)
 {
 
 }
-void TService::finishTask(CTask* task)
-{
-
-}
 
 
-void TService::getAward(CTask* task)
+void TService::getAward(int32_t tid)
 {
 
 

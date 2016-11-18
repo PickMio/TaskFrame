@@ -1,3 +1,4 @@
+#pragma once
 #include "stdafx.h"
 #include "TaskConfiger.h"
 class ReachCountTaskConfiger 
@@ -8,6 +9,6 @@ public:
     ~ReachCountTaskConfiger() override;
 public:
     void loadConfig() override;
-
+    int32_t getReachCount();
 
 };
