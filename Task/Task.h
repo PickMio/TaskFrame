@@ -7,7 +7,6 @@ using namespace std;
 
 #include "TaskConfiger.h"
 #include "CTaskData.h"
-
 enum TASK_PROGRESS
 {
     TASK_PROGRESS_NONE = 0,    //任务还没接收
@@ -28,12 +27,15 @@ public:
 //条件判断
 public:
     bool hasFinished();
-    void setTaskData(shared_ptr<CTaskData> tdata);
+    void setTaskData(CTaskDataPtr tdata);
     void addProgress(int32_t count);
+    int32_t getTaskID();
 
 private:
     int32_t  m_ID;//任务ID
-    shared_ptr<CTaskData> data;  //任务进度 
+    CTaskDataPtr data;  //任务进度 
     TASK_PROGRESS status;
 
 };
+
+using CTaskPtr = shared_ptr<CTask>;

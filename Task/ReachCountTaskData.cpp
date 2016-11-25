@@ -5,13 +5,12 @@
 
 ReachCountTaskData::ReachCountTaskData() :CTaskData(TASK_TYPE_REACH_COUNT)
 {
-
+    this->reset();
 
 }
 
 ReachCountTaskData::~ReachCountTaskData()
 {
-
 }
 
 

@@ -20,7 +20,7 @@ public:
 
 
 protected:
-    std::shared_ptr<CTaskConfiger> configer;
+    CTaskConfigerPtr configer;
 
 private:
     TASK_TYPE type;
@@ -31,3 +31,5 @@ private:
 
 
 };
+
+using CTaskDataPtr = std::shared_ptr<CTaskData>;
